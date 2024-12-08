@@ -2,6 +2,7 @@ import argv
 import day_five
 import day_four
 import day_one
+import day_six
 import day_three
 import day_two
 import error_response
@@ -14,6 +15,7 @@ pub fn main() {
     ["dayThree", path] -> day_three.solve(path)
     ["dayFour", path] -> day_four.solve(path)
     ["dayFive", path] -> day_five.solve(path)
+    ["daySix", path] -> day_six.solve(path)
     _ -> {
       io.println("Please provide a day number and a path to the input file")
       Error(error_response.InvalidArguments)
